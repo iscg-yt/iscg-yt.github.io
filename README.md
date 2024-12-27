@@ -109,30 +109,30 @@
     </div>
     <div class="container">
         <!-- Section 1 -->
-        <div class="section" data-keywords="進化武器">
+        <div class="section" data-keywords="進化槍 進化武器 進化 衣服 體驗">
             <h1>所有進化武器體驗</h1>
             <img src="Screenshot_20241225-220715328.jpg" alt="進化武器">
             <p id="text1">#FREEFIREC55A6330CE58EB61C8E3C975B8E90D8F9815</p>
             <button class="copy-btn" onclick="copyText('text1')">複製代碼</button>
         </div>
         <!-- Section 2 -->
-        <div class="section" data-keywords="外掛">
+        <div class="section" data-keywords="外掛 體驗">
             <h1>外掛體驗</h1>
             <img src="Screenshot_20241226-191506882.jpg" alt="外掛">
             <p id="text2">#FREEFIRED796B3438F1B31DDE1814CA8A851491A9815</p>
             <button class="copy-btn" onclick="copyText('text2')">複製代碼</button>
         </div>
         <!-- Section 3 -->
-        <div class="section" data-keywords="單人 進化槍">
+        <div class="section" data-keywords="單人 進化槍 進化武器 進化 衣服 體驗">
             <h1>單人-全進化槍+衣服</h1>
             <img src="Screenshot_20241226-201708674_2.jpg" alt="單人">
             <p id="text3">#FREEFIRECC6698AD72FE062B3D8E4D9463D61CDD9815</p>
             <button class="copy-btn" onclick="copyText('text3')">複製代碼</button>
         </div>
         <!-- Section 4 -->
-        <div class="section" data-keywords="雙人 合作跑酷">
-            <h1>雙人合作跑酷</h1>
-            <img src="Screenshot_20241226-201708674_1.jpg" alt="雙人合作跑酷">
+        <div class="section" data-keywords="雙人 進化槍 進化武器 進化 衣服 體驗">
+            <h1>雙人-全進化槍+衣服</h1>
+            <img src="Screenshot_20241226-201708674_1.jpg" alt="雙人">
             <p id="text4">#FREEFIREDF3E35BEF841A8858646FC70F227CC6F9815</p>
             <button class="copy-btn" onclick="copyText('text4')">複製代碼</button>
         </div>
