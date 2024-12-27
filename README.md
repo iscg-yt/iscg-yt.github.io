@@ -136,21 +136,31 @@
             <p id="text4">#FREEFIREDF3E35BEF841A8858646FC70F227CC6F9815</p>
             <button class="copy-btn" onclick="copyText('text4')">複製代碼</button>
         </div>
-    </div>
     <script>
+        // 切換漢堡菜單顯示
         function toggleMenu() {
             const menu = document.getElementById('menu');
             menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
         }
-        function searchContent() {
-            const input = document.getElementById('searchInput').value.toLowerCase();
+        // 複製文字功能
+        function copyText(elementId) {
+            const text = document.getElementById(elementId).innerText;
+            navigator.clipboard.writeText(text).then(() => {
+                alert("已複製！快去玩玩看地圖吧！");
+            }).catch(err => {
+                alert("複製失敗，請重試！");
+            });
+        }
+        // 搜尋功能
+        function filterSections() {
+            const query = document.getElementById('search').value.toLowerCase();
             const sections = document.querySelectorAll('.section');
             sections.forEach(section => {
-                const keywords = section.getAttribute('data-keywords');
-                if (keywords && keywords.toLowerCase().includes(input)) {
-                    section.classList.remove('hidden');
+                const keywords = section.getAttribute('data-keywords').toLowerCase();
+                if (keywords.includes(query)) {
+                    section.style.display = "block";
                 } else {
-                    section.classList.add('hidden');
+                    section.style.display = "none";
                 }
             });
         }
