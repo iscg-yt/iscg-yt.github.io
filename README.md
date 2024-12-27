@@ -11,7 +11,6 @@
             padding: 0;
             background-color: #f9f9f9;
         }
-        /* 漢堡菜單樣式 */
         .hamburger {
             position: fixed;
             top: 20px;
@@ -51,9 +50,6 @@
         }
         .menu a:last-child {
             border-bottom: none;
-        }
-        .menu a:hover {
-            background-color: #f0f0f0;
         }
         .search-bar {
             display: flex;
@@ -98,7 +94,6 @@
     </style>
 </head>
 <body>
-    <!-- 漢堡菜單 -->
     <div class="hamburger" onclick="toggleMenu()">
         <div></div>
         <div></div>
@@ -108,67 +103,51 @@
         <a href="https://iscg-yt.github.io">1. Map code</a>
         <a href="https://linktr.ee/ff.cg">2. All social medias</a>
     </div>
-    <!-- 搜尋框 -->
     <div class="search-bar">
         <input type="text" id="searchInput" placeholder="搜尋關鍵字...">
         <button onclick="searchContent()">搜尋</button>
     </div>
-    <!-- 主頁內容 -->
     <div class="container">
         <!-- Section 1 -->
-        <h1>所有進化武器體驗</h1>
-        <div class="section">
-            <img src="Screenshot_20241225-220715328.jpg" alt="1">
+        <div class="section" data-keywords="進化武器">
+            <h1>所有進化武器體驗</h1>
+            <img src="Screenshot_20241225-220715328.jpg" alt="進化武器">
             <p id="text1">#FREEFIREC55A6330CE58EB61C8E3C975B8E90D8F9815</p>
             <button class="copy-btn" onclick="copyText('text1')">複製代碼</button>
         </div>
-        <div class="divider"></div>
         <!-- Section 2 -->
-        <h1>外掛體驗</h1>
-        <div class="section">
-            <img src="Screenshot_20241226-191506882.jpg" alt="2">
+        <div class="section" data-keywords="外掛">
+            <h1>外掛體驗</h1>
+            <img src="Screenshot_20241226-191506882.jpg" alt="外掛">
             <p id="text2">#FREEFIRED796B3438F1B31DDE1814CA8A851491A9815</p>
             <button class="copy-btn" onclick="copyText('text2')">複製代碼</button>
         </div>
-        <div class="divider"></div>
         <!-- Section 3 -->
-        <h1>單人-全進化槍+衣服</h1>
-        <div class="section">
-            <img src="Screenshot_20241226-201708674_2.jpg" alt="3">
+        <div class="section" data-keywords="單人 進化槍">
+            <h1>單人-全進化槍+衣服</h1>
+            <img src="Screenshot_20241226-201708674_2.jpg" alt="單人">
             <p id="text3">#FREEFIRECC6698AD72FE062B3D8E4D9463D61CDD9815</p>
             <button class="copy-btn" onclick="copyText('text3')">複製代碼</button>
         </div>
-        <div class="divider"></div>
         <!-- Section 4 -->
-        <h1>雙人-全進化槍+衣服</h1>
-        <div class="section">
-            <img src="Screenshot_20241226-201708674_1.jpg" alt="4">
+        <div class="section" data-keywords="雙人 合作跑酷">
+            <h1>雙人合作跑酷</h1>
+            <img src="Screenshot_20241226-201708674_1.jpg" alt="雙人合作跑酷">
             <p id="text4">#FREEFIREDF3E35BEF841A8858646FC70F227CC6F9815</p>
             <button class="copy-btn" onclick="copyText('text4')">複製代碼</button>
         </div>
-        <div class="divider"></div>
-        <!-- Section 5 -->
-        <h1>雙人合作跑酷</h1>
-        <div class="section">
-            <img src="Screenshot_20241226-201708674_1.jpg" alt="4">
-            <p id="text4">#FREEFIREDF3E35BEF841A8858646FC70F227CC6F9815</p>
-            <button class="copy-btn" onclick="copyText('text4')">複製代碼</button>
-        </div>
-        <div class="divider"></div>
     </div>
     <script>
-        // 切換漢堡菜單顯示
         function toggleMenu() {
             const menu = document.getElementById('menu');
             menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
         }
-        // 搜尋功能
         function searchContent() {
             const input = document.getElementById('searchInput').value.toLowerCase();
             const sections = document.querySelectorAll('.section');
             sections.forEach(section => {
-                const keywords = section.getAttribute('data-keywords').toLowerCase();
-                if (keywords.includes(input)) {
+                const keywords = section.getAttribute('data-keywords');
+                if (keywords && keywords.toLowerCase().includes(input)) {
                     section.classList.remove('hidden');
                 } else {
                     section.classList.add('hidden');
