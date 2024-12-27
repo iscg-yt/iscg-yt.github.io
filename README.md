@@ -11,18 +11,7 @@
             padding: 0;
             background-color: #f9f9f9;
         }
-        /* 搜尋框樣式 */
-        .search-container {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .search-input {
-            width: 80%;
-            padding: 10px;
-            font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
+        /* 漢堡菜單樣式 */
         .hamburger {
             position: fixed;
             top: 20px;
@@ -66,6 +55,31 @@
         .menu a:hover {
             background-color: #f0f0f0;
         }
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .search-bar input {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin-right: 10px;
+        }
+        .search-bar button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .search-bar button:hover {
+            background-color: #0056b3;
+        }
         .container {
             max-width: 800px;
             background: #fff;
@@ -78,32 +92,8 @@
             text-align: center;
             margin-bottom: 30px;
         }
-        .section img {
-            max-width: 100%;
-            border-radius: 8px;
-        }
-        .section p {
-            font-size: 16px;
-            color: #333;
-            margin: 15px 0;
-        }
-        .copy-btn {
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        .copy-btn:hover {
-            background-color: #0056b3;
-        }
-        .divider {
-            height: 1px;
-            background: #ccc;
-            margin: 20px 0;
+        .hidden {
+            display: none;
         }
     </style>
 </head>
@@ -119,12 +109,12 @@
         <a href="https://linktr.ee/ff.cg">2. All social medias</a>
     </div>
     <!-- 搜尋框 -->
-    <div class="search-container">
-        <input type="text" class="search-input" id="search" placeholder="搜尋地圖名稱..." oninput="filterSections()">
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="搜尋關鍵字...">
+        <button onclick="searchContent()">搜尋</button>
     </div>
     <!-- 主頁內容 -->
-    <div class="container" id="content">
-        <h1 style="text-align: center; font-size: 36px;">以下是我的戰場地圖代碼</h1>
+    <div class="container">
         <!-- Section 1 -->
         <h1>所有進化武器體驗</h1>
         <div class="section">
@@ -172,25 +162,16 @@
             const menu = document.getElementById('menu');
             menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
         }
-        // 複製文字功能
-        function copyText(elementId) {
-            const text = document.getElementById(elementId).innerText;
-            navigator.clipboard.writeText(text).then(() => {
-                alert("已複製！快去玩玩看地圖吧！");
-            }).catch(err => {
-                alert("複製失敗，請重試！");
-            });
-        }
         // 搜尋功能
-        function filterSections() {
-            const query = document.getElementById('search').value.toLowerCase();
+        function searchContent() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
             const sections = document.querySelectorAll('.section');
             sections.forEach(section => {
                 const keywords = section.getAttribute('data-keywords').toLowerCase();
-                if (keywords.includes(query)) {
-                    section.style.display = "block";
+                if (keywords.includes(input)) {
+                    section.classList.remove('hidden');
                 } else {
-                    section.style.display = "none";
+                    section.classList.add('hidden');
                 }
             });
         }
