@@ -100,9 +100,9 @@
         <div></div>
     </div>
     <div class="menu" id="menu">
-        <a href="https://iscg-yt.github.io"><p style="font-size: 50px;">1.Map code</p></a>
-        <a href="https://linktr.ee/ff.cg"><p style="font-size: 50px;">2. All social medias</p></a>
-        <a href="https://iscg-yt.github.io/iscg-yt.github.io-player/"><p style="font-size: 50px;">3. Players map recommend</p></a>
+        <a href="https://iscg-yt.github.io"><p style="font-size: 30px;">1.Map code</p></a>
+        <a href="https://linktr.ee/ff.cg"><p style="font-size: 30px;">2. All social medias</p></a>
+        <a href="https://iscg-yt.github.io/iscg-yt.github.io-player/"><p style="font-size: 30px;">3. Players map recommend</p></a>
     </div>
     <div class="search-bar">
         <input type="text" id="searchInput" placeholder="搜尋關鍵字...">
