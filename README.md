@@ -102,6 +102,7 @@
     <div class="menu" id="menu">
         <a href="https://iscg-yt.github.io">1. Map code</a>
         <a href="https://linktr.ee/ff.cg">2. All social medias</a>
+        <a href="https://iscg-yt.github.io/iscg-yt.github.io-player/">2. All social medias</a>
     </div>
     <div class="search-bar">
         <input type="text" id="searchInput" placeholder="搜尋關鍵字...">
