@@ -100,7 +100,7 @@
         <div></div>
     </div>
     <div class="menu" id="menu">
-        <a href="https://iscg-yt.github.io">1. Map code</a>
+        <a href="https://iscg-yt.github.io">1. <p style="font-size: 20px;">Map code</p></a>
         <a href="https://linktr.ee/ff.cg">2. All social medias</a>
         <a href="https://iscg-yt.github.io/iscg-yt.github.io-player/">3. Players map recommend</a>
     </div>
