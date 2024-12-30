@@ -137,6 +137,13 @@
             <p id="text4">#FREEFIREDF3E35BEF841A8858646FC70F227CC6F9815</p>
             <button class="copy-btn" onclick="copyText('text4')">複製代碼</button>
         </div>
+        <!-- Section 5 -->
+        <div class="section" data-keywords="雙人 進化槍 進化武器 進化 衣服 體驗">
+            <h1>雙人-全進化槍+衣服</h1>
+            <img src="Screenshot_20241230-211928416.jpg" alt="雙人">
+            <p id="text5">#FREEFIRE64F58476D76F49441A1B9FA0600547229815</p>
+            <button class="copy-btn" onclick="copyText('text5')">複製代碼</button>
+        </div>
     <script>
         // 切換漢堡菜單顯示
         function toggleMenu() {
