@@ -147,14 +147,14 @@
         <!-- Section 6 -->
         <div class="section" data-keywords="">
             <h1>取得服裝ID</h1>
-            <img src="." alt="服裝">
+            <img src="Screenshot_20241230-212331781.jpg" alt="服裝">
             <p id="text6">#FREEFIREC77E5B663EBB33602FD4C8074A86A8B79815</p>
             <button class="copy-btn" onclick="copyText('text6')">複製代碼</button>
         </div>
         <!-- Section 7 -->
         <div class="section" data-keywords="">
             <h1>單人-狙擊訓練場</h1>
-            <img src="." alt="狙擊訓練場">
+            <img src="Screenshot_20241230-212242413.jpg" alt="狙擊訓練場">
             <p id="text7">#FREEFIRE99929B54F0C8CDABAD54FF2157E51FC49815</p>
             <button class="copy-btn" onclick="copyText('text7')">複製代碼</button>
         </div>
