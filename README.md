@@ -138,11 +138,25 @@
             <button class="copy-btn" onclick="copyText('text4')">複製代碼</button>
         </div>
         <!-- Section 5 -->
-        <div class="section" data-keywords="雙人 進化槍 進化武器 進化 衣服 體驗">
-            <h1>雙人-全進化槍+衣服</h1>
-            <img src="Screenshot_20241230-211928416.jpg" alt="雙人">
+        <div class="section" data-keywords="">
+            <h1>自動去塗裝地圖（裕隆規用）</h1>
+            <img src="Screenshot_20241230-211928416.jpg" alt="裕隆">
             <p id="text5">#FREEFIRE64F58476D76F49441A1B9FA0600547229815</p>
             <button class="copy-btn" onclick="copyText('text5')">複製代碼</button>
+        </div>
+        <!-- Section 6 -->
+        <div class="section" data-keywords="">
+            <h1>取得服裝ID</h1>
+            <img src="." alt="服裝">
+            <p id="text6">#FREEFIREC77E5B663EBB33602FD4C8074A86A8B79815</p>
+            <button class="copy-btn" onclick="copyText('text6')">複製代碼</button>
+        </div>
+        <!-- Section 7 -->
+        <div class="section" data-keywords="">
+            <h1>單人-狙擊訓練場</h1>
+            <img src="." alt="狙擊訓練場">
+            <p id="text7">#FREEFIRE99929B54F0C8CDABAD54FF2157E51FC49815</p>
+            <button class="copy-btn" onclick="copyText('text7')">複製代碼</button>
         </div>
     <script>
         // 切換漢堡菜單顯示
