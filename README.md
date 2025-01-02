@@ -165,6 +165,13 @@
             <p id="text8">#</p>
             <button class="copy-btn" onclick="copyText('text8')">複製代碼</button>
         </div>
+        <!-- Section 9 -->
+        <div class="section" data-keywords="凝膠 體驗 凝膠塗裝 塗裝體驗 塗裝 凝膠塗裝體驗">
+            <h1>凝膠塗裝體驗</h1>
+            <img src="Screenshot_20250101-140333230.jpg" alt="凝膠塗裝體驗">
+            <p id="text9">#</p>
+            <button class="copy-btn" onclick="copyText('text9')">複製代碼</button>
+        </div>
     <script>
         // 切換漢堡菜單顯示
         function toggleMenu() {
