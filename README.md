@@ -152,11 +152,18 @@
             <button class="copy-btn" onclick="copyText('text6')">複製代碼</button>
         </div>
         <!-- Section 7 -->
-        <div class="section" data-keywords="">
+        <div class="section" data-keywords="狙擊 訓練場 狙擊訓練場 單人">
             <h1>單人-狙擊訓練場</h1>
             <img src="Screenshot_20241230-212242413.jpg" alt="狙擊訓練場">
             <p id="text7">#FREEFIRE99929B54F0C8CDABAD54FF2157E51FC49815</p>
             <button class="copy-btn" onclick="copyText('text7')">複製代碼</button>
+        </div>
+        <!-- Section 8 -->
+        <div class="section" data-keywords="雙人 跑酷 合作 雙人合作 雙人跑酷 雙人合作跑酷">
+            <h1>雙人合作跑酷</h1>
+            <img src="FreeFire_01_01_2025 14_05_16.png" alt="雙人跑酷">
+            <p id="text8">#</p>
+            <button class="copy-btn" onclick="copyText('text8')">複製代碼</button>
         </div>
     <script>
         // 切換漢堡菜單顯示
