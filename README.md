@@ -119,7 +119,7 @@
         </div>
         <!-- Section 2 -->
         <div class="section" data-keywords="外掛 體驗 外掛體驗 #FREEFIRED796B3438F1B31DDE1814CA8A851491A9815">
-            <h1>外掛體驗</h1>
+            <h1>外掛體驗！</h1>
             <img src="Screenshot_20241226-191506882.jpg" alt="外掛">
             <p id="text2">#FREEFIRED796B3438F1B31DDE1814CA8A851491A9815</p>
             <button class="copy-btn" onclick="copyText('text2')">複製代碼</button>
