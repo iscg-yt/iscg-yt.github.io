@@ -110,7 +110,7 @@
         <button onclick="filterSections()">搜尋</button>
     </div>
     <div class="container">
-        <h1>"我的戰場地圖代碼"</h1>
+        <h1>“我的戰場地圖代碼”↓↓↓↓↓↓↓↓↓↓↓↓</h1>
         <!-- Section 1 -->
         <div class="section" data-keywords="進化槍 進化武器 進化 衣服 體驗 塗裝 #FREEFIREC55A6330CE58EB61C8E3C975B8E90D8F9815">
             <h1>所有進化武器體驗</h1>
@@ -174,6 +174,7 @@
             <p id="text9">#FREEFIREA56D6F07C155F825F63CCD7BA50871219815</p>
             <button class="copy-btn" onclick="copyText('text9')">複製代碼</button>
         </div>
+    </div>
     <script>
         // 切換漢堡菜單顯示
         function toggleMenu() {
