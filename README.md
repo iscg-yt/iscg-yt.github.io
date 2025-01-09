@@ -190,14 +190,14 @@
         }
         // 搜尋功能
         function filterSections() {
-            const query = document.getElementById('search').value.toLowerCase();
-            const sections = document.querySelectorAll('.section');
+            const query = document.getElementById('searchInput').value.toLowerCase(); // 修正搜尋框 ID
+            const sections = document.querySelectorAll('.section'); // 選取所有 class="section" 的區塊
             sections.forEach(section => {
-                const keywords = section.getAttribute('data-keywords').toLowerCase();
+                const keywords = section.getAttribute('data-keywords').toLowerCase(); // 取得 data-keywords 屬性
                 if (keywords.includes(query)) {
-                    section.style.display = "block";
+                    section.style.display = "block"; // 顯示符合的區塊
                 } else {
-                    section.style.display = "none";
+                    section.style.display = "none"; // 隱藏不符合的區塊
                 }
             });
         }
