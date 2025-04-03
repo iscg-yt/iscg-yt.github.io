@@ -102,7 +102,7 @@
     <div class="menu" id="menu">
         <a href="https://iscg-yt.github.io"><p style="font-size: 30px;">1.Map code</p></a>
         <a href="https://linktr.ee/ff.cg"><p style="font-size: 30px;">2. All social medias</p></a>
-        <a href="https://forms.zohopublic.com/sobrickffgm1/form/Playersmaprecommend/formperma/lsD3viLptVn5sEEwdmRBHRpsjEWC7ZF-q0gihbwDW7k"><p style="font-size: 30px;">3. Players map recommend（問卷）</p></a>
+        <a href="https://forms.gle/88vwjp5nU51oboRX9"><p style="font-size: 30px;">3. Players map recommend（問卷）</p></a>
         <a href="https://iscg-yt.github.io/iscg-yt.github.io-pm-/"><p style="font-size: 30px;">4. Players map recommend（地圖）</p></a>
     </div>
     <div class="search-bar">
